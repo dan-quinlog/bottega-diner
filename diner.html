@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="diner.css">
+    <script src="diner.js"></script>
+    <title>My Fine Diner</title>
+
+
+</head>
+<body>
+    <div class=main>
+        <h1>Welcome to My Fine Diner</h1>
+        <h2 id="wait-staff">Have a look at the menu, let me know what you'd like to order!</h2>
+        <span class="input-area">
+            <input type="text" placeholder="enter order here please" id="input">
+            <input type="button" value="Submit" onclick="orderUp()">
+        </span>
+        <div class="spacer"></div>
+        <div class="menu">
+            <div class="ingredients">
+                <span class="menu-title">Ingredients</span>
+                <span01><br><br>Romaine</span01>
+                <span02><br><br>Spinach</span02>
+                <span03><br><br>Iceburg</span03>
+                <span04><br><br>Tomatoes</span04>
+                <span05><br><br>Cucumbers</span05>
+                <span06><br><br>Olives</span06>
+                <span07><br><br>Roasted Red Peppers</span07>
+                <span08><br><br>Onions</span08>
+                <span09><br><br>Pickles</span09>
+                <span10><br><br>Jalapenos</span10>
+                <span11><br><br>Banana Peppers</span11>
+                <span12><br><br>Green Peppers</span12>
+                <span13><br><br>Cilantro</span13>
+            </div>
+            <div class="vertspacer">
+
+            </div>
+            <div class="entrees">
+                <span class="menu-title">Artisan Pitas <span class="price">smaller $6</span><span class="price">bigger $8</span></span><br>
+                <span01>
+                    <span class="entreeitem">Chicken Pesto</span>
+                    <br>
+                    <span class="entreedesc">Chicken Breast grilled in Pesto, Romaine, Roasted Red Peppers, Tomatoes, Onions, Feta, Greek Seasoning</span>
+                    <br>
+                </span01>
+                <span02>
+                    <span class="entreeitem">Bacon CheeseBurger</span>
+                    <br>
+                    <span class="entreedesc">Steak, Bacon, Melted Cheddar, Iceberg Lettuce, Tomatoes, Pickles, Onions, Yellow Mustard, Light Mayo, Smokehouse Maple Seasoning</span>
+                    <br>
+                </span02>
+                <span03>
+                    <span class="entreeitem">Sriracha Chicken</span>
+                    <br>
+                    <span class="entreedesc">Chicken Grilled in Sriracha, Melted Cheddar, Iceberg Lettuce, Onions, Tomatoes, Jalapenos, Banana Peppers, Honey Mustard, Bayou Cajun Seasoning</span>
+                    <br>
+                </span03>
+                <span04>
+                    <span class="entreeitem">Steak Fajita</span>
+                    <br>
+                    <span class="entreedesc">Steak, Grilled Onions & Green Peppers, Tomatoes, Sour Cream, Roasted Red Peppers, Iceberg Lettuce, Ancho Chipotle Sauce, Pepper Jack, Mojito Lime Seasoning</span>
+                    <br>
+                </span04>
+                <span05>
+                    <span class="entreeitem">Boom Boom Black Bean (Vegetarian)</span>
+                    <br>
+                    <span class="entreedesc">Black Bean Patty, Grilled Onions, Melted Cheddar, Romaine, Tomatoes, Cilantro, Green Peppers, Boom Boom Sauce, Mojito Lime Seasoning</span>
+                    <br>
+                </span05>
+                <br>
+                <span class="menu-title">Classic Pitas <span class="price">smaller $5.50</span><span class="price">bigger $7.50</span></span><br>
+                <span06>
+                    <span class="entreeitem">Gyro</span>
+                    <br>
+                    <span class="entreedesc">Seasoned Strips of Lamb & Beef, Spinach, Cucumbers, Tomatoes, Onions, Black Olives, Feta, Tzatziki</span>
+                    <br>
+                </span06>
+                <span07>
+                    <span class="entreeitem">Souvlaki</span>
+                    <br>
+                    <span class="entreedesc">Mediterranean Seasoned Dark Meat Chicken, Spinach, Tomatoes, Onions, Feta, Cucumbers, Black Olives, Tzatziki, Greek Seasoning</span>
+                    <br>
+                </span07>
+                <span08>
+                    <span class="entreeitem">Aloha</span>
+                    <br>
+                    <span class="entreedesc">Chicken, Ham & Pineapple Grilled in Teriyaki, Melted Provolone, Cucumbers, Romaine, Ranch Dressing, Mojito Lime Seasoning</span>
+                    <br>
+                </span08>
+                <span09>
+                    <span class="entreeitem">Awakin With Bacon</span>
+                    <br>
+                    <span class="entreedesc">Bacon, Eggs, Spinach, Cheddar, Green Peppers, Onions, Ancho Chipotle Sauce, Salt & Pepper</span>
+                    <br>
+                </span09>
+                <span10>
+                    <span class="entreeitem">Falafel (Vegetarian)</span>
+                    <br>
+                    <span class="entreedesc">Falafel Balls grilled in Secret Sauce, Spinach, Tomatoes, Onions, Feta, Cucumbers, Black Olives, Tzatziki, Greek Seasoning</span>
+                    <br>
+                </span10>
+                
+            </div>
+            <div class="vertspacer">
+                
+            </div>
+            <div class="sides-and-drinks">
+                 <div class="sides">
+                    <span class="menu-title">Choose Chips or a Cookie and a Drink</span>
+                    <span01><br><br>Cool Ranch Doritos</span01>
+                    <span02><br><br>Original Lays</span02>
+                    <span03><br><br>Salt and Vinegar</span03>
+                    <span04><br><br>Opium Spice Chilleetos</span04>
+                    <span05><br><br>Chester Puffs Crunch</span05>
+                    <span06><br><br>Macadamia Nut Cookie</span06>
+                    <span07><br><br>Chocolate Chip Cookie</span07>
+                    <span08><br><br>Fountain Soda</span08>
+                    <span09><br><br>Bottled Juice</span09>
+                    <span10><br><br>Bottled Water</span10>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <span id="running-order"></span>
+    </div>
+</body>
+</html>

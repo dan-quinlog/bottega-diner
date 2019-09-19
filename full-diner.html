@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Fine Diner</title>
+
+    <style>
+    html {
+        background-color: #121212;
+        color: #cccccc;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #input {
+        width: 30vw;
+    }
+    .input-area {
+        display: flex;
+        flex-direction: row;
+    }
+    .spacer {
+        height: 50px;
+    }
+    .vertspacer {
+        width: 50px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .entrees {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-title {
+        font-size: 1.2em;
+    }
+    .price {
+        background-color: #cccccc;
+        color: #121212;
+        border-radius: 3px;
+        margin: 2px;
+        padding: 2px;
+    }
+    .entreeitem {
+        font-size: 1.2em;
+    }
+    .entreedesc {
+        font-size: .8em;
+    }
+    .view_item {
+        text-transform: capitalize;
+    }
+    .view_ingredients {
+        text-transform: capitalize;
+        font-size: .8em;
+    }</style>
+
+</head>
+<body>
+    <div class=main>
+        <h1>Welcome to My Fine Diner</h1>
+        <h2 id="wait-staff">Have a look at the menu, let me know what you'd like to order!</h2>
+        <span class="input-area">
+            <input type="text" placeholder="enter order here please" id="input">
+            <input type="button" value="Submit" onclick="orderUp()">
+        </span>
+        <div class="spacer"></div>
+        <div class="menu">
+            <div class="ingredients">
+                <span class="menu-title">Ingredients</span>
+                <span01><br><br>Romaine</span01>
+                <span02><br><br>Spinach</span02>
+                <span03><br><br>Iceburg</span03>
+                <span04><br><br>Tomatoes</span04>
+                <span05><br><br>Cucumbers</span05>
+                <span06><br><br>Olives</span06>
+                <span07><br><br>Roasted Red Peppers</span07>
+                <span08><br><br>Onions</span08>
+                <span09><br><br>Pickles</span09>
+                <span10><br><br>Jalapenos</span10>
+                <span11><br><br>Banana Peppers</span11>
+                <span12><br><br>Green Peppers</span12>
+                <span13><br><br>Cilantro</span13>
+            </div>
+            <div class="vertspacer">
+
+            </div>
+            <div class="entrees">
+                <span class="menu-title">Artisan Pitas <span class="price">smaller $6</span><span class="price">bigger $8</span></span><br>
+                <span01>
+                    <span class="entreeitem">Chicken Pesto</span>
+                    <br>
+                    <span class="entreedesc">Chicken Breast grilled in Pesto, Romaine, Roasted Red Peppers, Tomatoes, Onions, Feta, Greek Seasoning</span>
+                    <br>
+                </span01>
+                <span02>
+                    <span class="entreeitem">Bacon CheeseBurger</span>
+                    <br>
+                    <span class="entreedesc">Steak, Bacon, Melted Cheddar, Iceberg Lettuce, Tomatoes, Pickles, Onions, Yellow Mustard, Light Mayo, Smokehouse Maple Seasoning</span>
+                    <br>
+                </span02>
+                <span03>
+                    <span class="entreeitem">Sriracha Chicken</span>
+                    <br>
+                    <span class="entreedesc">Chicken Grilled in Sriracha, Melted Cheddar, Iceberg Lettuce, Onions, Tomatoes, Jalapenos, Banana Peppers, Honey Mustard, Bayou Cajun Seasoning</span>
+                    <br>
+                </span03>
+                <span04>
+                    <span class="entreeitem">Steak Fajita</span>
+                    <br>
+                    <span class="entreedesc">Steak, Grilled Onions & Green Peppers, Tomatoes, Sour Cream, Roasted Red Peppers, Iceberg Lettuce, Ancho Chipotle Sauce, Pepper Jack, Mojito Lime Seasoning</span>
+                    <br>
+                </span04>
+                <span05>
+                    <span class="entreeitem">Boom Boom Black Bean (Vegetarian)</span>
+                    <br>
+                    <span class="entreedesc">Black Bean Patty, Grilled Onions, Melted Cheddar, Romaine, Tomatoes, Cilantro, Green Peppers, Boom Boom Sauce, Mojito Lime Seasoning</span>
+                    <br>
+                </span05>
+                <br>
+                <span class="menu-title">Classic Pitas <span class="price">smaller $5.50</span><span class="price">bigger $7.50</span></span><br>
+                <span06>
+                    <span class="entreeitem">Gyro</span>
+                    <br>
+                    <span class="entreedesc">Seasoned Strips of Lamb & Beef, Spinach, Cucumbers, Tomatoes, Onions, Black Olives, Feta, Tzatziki</span>
+                    <br>
+                </span06>
+                <span07>
+                    <span class="entreeitem">Souvlaki</span>
+                    <br>
+                    <span class="entreedesc">Mediterranean Seasoned Dark Meat Chicken, Spinach, Tomatoes, Onions, Feta, Cucumbers, Black Olives, Tzatziki, Greek Seasoning</span>
+                    <br>
+                </span07>
+                <span08>
+                    <span class="entreeitem">Aloha</span>
+                    <br>
+                    <span class="entreedesc">Chicken, Ham & Pineapple Grilled in Teriyaki, Melted Provolone, Cucumbers, Romaine, Ranch Dressing, Mojito Lime Seasoning</span>
+                    <br>
+                </span08>
+                <span09>
+                    <span class="entreeitem">Awakin With Bacon</span>
+                    <br>
+                    <span class="entreedesc">Bacon, Eggs, Spinach, Cheddar, Green Peppers, Onions, Ancho Chipotle Sauce, Salt & Pepper</span>
+                    <br>
+                </span09>
+                <span10>
+                    <span class="entreeitem">Falafel (Vegetarian)</span>
+                    <br>
+                    <span class="entreedesc">Falafel Balls grilled in Secret Sauce, Spinach, Tomatoes, Onions, Feta, Cucumbers, Black Olives, Tzatziki, Greek Seasoning</span>
+                    <br>
+                </span10>
+                
+            </div>
+            <div class="vertspacer">
+                
+            </div>
+            <div class="sides-and-drinks">
+                 <div class="sides">
+                    <span class="menu-title">Choose Chips or a Cookie and a Drink</span>
+                    <span01><br><br>Cool Ranch Doritos</span01>
+                    <span02><br><br>Original Lays</span02>
+                    <span03><br><br>Salt and Vinegar</span03>
+                    <span04><br><br>Opium Spice Chilleetos</span04>
+                    <span05><br><br>Chester Puffs Crunch</span05>
+                    <span06><br><br>Macadamia Nut Cookie</span06>
+                    <span07><br><br>Chocolate Chip Cookie</span07>
+                    <span08><br><br>Fountain Soda</span08>
+                    <span09><br><br>Bottled Juice</span09>
+                    <span10><br><br>Bottled Water</span10>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <span id="running-order"></span>
+    </div>
+</body>
+<script>
+const order = [];
+
+function orderUp() {
+    let response = document.getElementById('input').value.toLowerCase();
+    //check for main item
+    //-> check for ingredients -> add or remove
+    //-> chips / cookie / drink
+    //check for multiple main item -> repeat if needed
+    //ask if any other items are needed -> repeat if needed
+    //input reader allmight!!!
+    const queue = [];
+    for ( var i = 0 ; i < response.length ; i++ ) {
+        const queue_check = action_items.concat(entree, ingredients, sides, drinks);//everything we are checking for in input.
+
+        queue_check.forEach(element => {
+            if ( response.indexOf(element) == i ) {
+                queue.push(element);
+            }
+        });
+    }
+    if ( queue.length == 0 ) {
+        waitStaff("Sorry, I missed that.  Please enter what you would like to order.");
+    }
+    else {
+        do_work(queue);
+    }
+}
+
+function do_work(queue) {
+    let action = 'add';
+    let size = 'bigger';
+    let last_step;
+    while ( queue.length > 0 ) {
+        let step = queue.shift();
+
+        if ( action_items.includes(step) ) {
+            switch ( step ) {
+                case 'add':
+                case 'with':
+                case 'want':
+                    action = 'add';
+                    break;
+                case 'no':
+                case "don't":
+                case 'remove':
+                    action = 'remove';
+                    break;
+                case 'bigger':
+                case 'big':
+                    size = 'bigger';
+                case 'smaller':
+                case 'small':
+                    size = 'smaller';
+            }
+            last_step = step;
+        }
+
+        if ( ingredients.includes(last_step) && (entree.includes(step) || sides.includes(step) || drinks.includes(step)) ) {
+            action = 'add';
+        }
+
+        if ( action == 'add' ) {
+            if ( entree.includes(step) ) {
+                order.push(new OrderItem(step, size));
+            }
+            if ( ingredients.includes(step) ) {
+                order[(order.length-1)].add_topping(step);
+            }
+            if ( sides.includes(step) ) {
+                let side_added = false;
+                order.forEach(item => {
+                    if ( side_added == false && item.has_side() == false ) 
+                    {
+                        item.side = step;
+                        side_added = true;
+                    }
+                });
+            }
+            if ( drinks.includes(step) ) {
+                let drink_added = false;
+                order.forEach(item => {
+                    if ( drink_added == false && item.has_drink() == false ) 
+                    {
+                        item.drink = step;
+                        drink_added = true;
+                    }
+                });
+            }
+            waitStaff("Does that recipe look good? or can I change anything for you?");
+            last_step = step;
+            displayOrder(order);
+        } else if ( action == 'remove' ) {
+            if ( entree.includes(step) ) {
+                let index;
+                order.forEach(item => {
+                    if ( item.name == step ) {
+                        index = order.indexOf(item);
+                    }
+                });
+                order.splice(index, 1);
+            }
+            if ( ingredients.includes(step) ) {
+                order[(order.length-1)].remove_topping(step);
+            }
+            if ( sides.includes(step) ) {
+                let side_removed = false;
+                order.forEach(item => {
+                    if ( side_removed == false && item.has_side() == true ) 
+                    {
+                        item.side = 'none';
+                        side_removed = true;
+                    }
+                });
+            }
+            if ( drinks.includes(step) ) {
+                let drink_removed = false;
+                order.forEach(item => {
+                    if ( drink_removed == false && item.has_drink() == true ) 
+                    {
+                        item.drink = 'none';
+                        drink_removed = true;
+                    }
+                });
+            }
+            waitStaff("That's been removed.  What else can I get you?");
+            last_step = step;
+            displayOrder(order);
+        }
+    }
+}
+
+function displayOrder(order) {
+    let order_out = 'Your order:<br>';
+    if ( order.length > 0 ) {
+        let total = 0;
+        order.forEach(item => {
+            order_out += `$${item.price} ${item.name}: ${item.toppings}${item.has_side() ? ` with ${item.side}` : ``}${item.has_drink() ? ` and a ${item.drink}`:``}<br></br>`;
+            total += parseInt(item.price);
+        }); 
+        order_out += `$${total.toFixed(2)} is your total`;
+        orderScreen(order_out);
+    } else {
+        orderScreen('Order is currently empty.');
+    }
+}
+
+function waitStaff(str) {
+    document.getElementById('wait-staff').innerHTML = str;
+}
+function orderScreen(str) {
+    document.getElementById('running-order').innerHTML = str;
+}
+
+class OrderItem {
+    constructor(name, size = 'bigger') {
+        this.name = name;
+        this.size = size;
+        this.side = 'none';
+        this.drink = 'none';
+        this.toppings = [...recipe[this.name]];
+        if ( artisan.includes(this.name) ) {
+            if ( this.size == 'bigger' ) {
+                this.price = '8.00';
+            } else {
+                this.price = '6.00';
+            }
+        } else if ( this.size == 'bigger') {
+                this.price = '7.50';
+            } else {
+                this.price = '5.00';
+            }
+    }
+    remove_topping(topping) {
+        if ( this.toppings.includes(topping) ) {
+            this.toppings.splice(this.toppings.indexOf(topping), 1);
+        }
+    }
+    add_topping(topping) {
+        if ( !this.toppings.includes(topping) ) {
+            this.toppings.push(topping);
+        }
+    }
+    has_side() {
+        if (this.side != 'none') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    has_drink() {
+        if (this.drink != 'none') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
+const artisan = [
+    'chicken pesto',
+    'bacon cheeseburger',
+    'sriracha chicken',
+    'steak fajita',
+    'boom boom black bean'
+];
+const classic = [
+    'gyro',
+    'souvlaki',
+    'aloha',
+    'awakin with bacon',
+    'falafel'
+];
+const entree = artisan.concat(classic);
+const ingredients = [
+    'romaine',
+    'spinach',
+    'iceburg',
+    'tomatoes',
+    'cucumbers',
+    'olives',
+    'roasted red peppers',
+    'onions',
+    'pickles',
+    'jalapenos',
+    'banana peppers',
+    'green peppers',
+    'cilantro'
+];
+const chips = [
+    'cool ranch doritos',
+    'original lays',
+    'salt and vinegar',
+    'opium spice chilletos',
+    'chester puffs crunch'
+];
+const cookie = [
+    'macadamia nut',
+    'chocolate chip'
+];
+const sides = chips.concat(cookie);
+const drinks = [
+    'fountain soda',
+    'bottled juice',
+    'bottled water'
+];
+const recipe = {
+    'chicken pesto':['chicken breast grilled in pesto', 'romaine', 'roasted red peppers', 'tomatoes', 'onions', 'feta', 'greek seasoning'],
+    'bacon cheeseburger':['steak', 'bacon', 'melted cheddar', 'iceberg lettuce', 'tomatoes', 'pickles', 'onions', 'yellow mustard', 'light mayo', 'smokehouse maple seasoning'],
+    'sriracha chicken':['chicken grilled in sriracha', 'melted cheddar', 'iceberg lettuce', 'onions', 'tomatoes', 'jalapenos', 'banana peppers', 'honey mustard', 'bayou cajun seasoning'],
+    'steak fajita':['steak', 'onions', 'green peppers', 'tomatoes', 'sour cream', 'roasted red peppers', 'iceberg lettuce', 'ancho chipotle sauce', 'pepper jack', 'mojito lime seasoning'],
+    'boom boom black bean':['black bean patty', 'grilled onions', 'melted cheddar', 'romaine', 'tomatoes', 'cilantro', 'green peppers', 'boom boom sauce', 'mojito lime seasoning'],
+    'gyro':['seasoned strips of lamb & beef', 'spinach', 'cucumbers', 'tomatoes', 'onions', 'black olives', 'feta', 'tzatziki'],
+    'Souvlaki':['mediterranean seasoned dark meat chicken', 'spinach', 'tomatoes', 'onions', 'feta', 'cucumbers', 'black olives', 'tzatziki', 'greek seasoning'],
+    'aloha':['chicken', 'ham & pineapple grilled in teriyaki', 'melted provolone', 'cucumbers', 'romaine', 'ranch dressing', 'mojito lime seasoning'],
+    'awakin with bacon':['bacon', 'eggs', 'spinach', 'cheddar', 'green peppers', 'onions', 'ancho chipotle sauce', 'salt & pepper'],
+    'falafel':['falafel balls grilled in secret sauce', 'spinach', 'tomatoes', 'onions', 'feta', 'cucumbers', 'black olives', 'tzatziki', 'greek seasoning'],
+
+};
+const action_items = [
+    'add', 'with', 'no', "don't", 'remove', 'want', 'bigger', 'big', 'smaller', 'small'
+];
+</script>
+</html>
